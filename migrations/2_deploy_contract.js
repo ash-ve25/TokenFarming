@@ -13,8 +13,8 @@ module.exports = async function(deployer, network, accounts) {
   const tokenFarm = await TokenFarm.deployed();
 
 //transfer all tokens to Tokenfarm ~1M
-  await dappToken.transfer(tokenFarm.address, "100000000000000000000000");
+  await dappToken.transfer(tokenFarm.address, "1000000000000000000000000");
 
 //tranfer 100 DAI Token to investor
-  await daiToken.transfer(accounts[1], "10000000000000000000");
+  await daiToken.transfer(accounts[1], "100000000000000000000");
 };
